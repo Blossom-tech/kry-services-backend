@@ -19,8 +19,9 @@ Note: It will use a remote clearDB Mysql database from Heroku and create an empt
 You can check by visiting http://localhost:8080/service/getAll that a empty table has been created.
 
 - Run the frontend Application
-Navigate to the frontend folder of the project in the Command Line and run the following command
+Navigate to the frontend folder of the project in the Command Line and run the following commands
 
+npm install
 npm start
 
 This will start the frontend project at http://localhost:3000/
