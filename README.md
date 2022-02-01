@@ -1,6 +1,7 @@
 # Kry Code Assignment (Service Poller)
 ## How to run the Application 
-It's online at the follwong link on Heroku
+It's online at the following link on Heroku
+
 https://kry-services-frontend.herokuapp.com/
 
 the UI will show the list of services if their is any present in the database or you can add few services and it will display the list
