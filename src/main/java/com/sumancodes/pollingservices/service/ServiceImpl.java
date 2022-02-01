@@ -33,10 +33,10 @@ public class ServiceImpl {
         }
         return serviceRes;
     }
-    public Integer getStatus(String apiAdress) {
+    public Integer getStatus(String apiAddress) {
         int code = 0;
         try {
-            URL url = new URL(apiAdress);
+            URL url = new URL(apiAddress);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.connect();
