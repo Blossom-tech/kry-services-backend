@@ -9,6 +9,7 @@ the UI will show the list of services if there are any present in the database o
 ### 2. Run locally
 
 - Run the backend application
+Download the project on your system.
 Open terminal and navigate to the root folder of the project and run the following commands
 
 mvn clean install
@@ -19,6 +20,8 @@ Note: It will use a remote clearDB Mysql database from Heroku and create an empt
 You can check by visiting http://localhost:8080/service/getAll that a empty table has been created.
 
 - Run the frontend Application
+Link to frontend repo: https://github.com/Blossom-tech/kry-services-frontend.git
+Download the project on your system.
 Navigate to the frontend folder of the project in the Command Line and run the following commands
 
 npm install
