@@ -34,9 +34,9 @@ Download the project on your system.
 
 Open terminal and navigate to the root folder of the project and run the following commands
 
-mvn clean install
+### 'mvn clean install'
 
-mvn spring-boot:run
+### 'mvn spring-boot:run'
 
 This will start the web app/backend on the http://localhost:8080/
 
@@ -52,11 +52,14 @@ Download the project on your system.
 
 Navigate to the frontend folder of the project in the Command Line and run the following commands
 
-npm install
+### 'npm install'
 
-npm start
+### 'npm start'
 
-This will start the frontend project at http://localhost:3000/
+This will run the app in the development mode.\
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
 - Add some users and you are good to go.
 Note: make sure to add valid urls for OK status.
 
