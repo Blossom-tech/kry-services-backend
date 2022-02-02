@@ -13,6 +13,14 @@ Frontend repo:  https://github.com/Blossom-tech/kry-services-frontend.git
 https://kry-services-frontend.herokuapp.com/
 
 The Application will show the list of services if there are any present in the database or you can add few services and it will display them on the screen.
+- It might take few seconds for the application to start up for the first time. Also, first db interaction could take few seconds.
+
+- Add some users and you are good to go.
+Note: make sure to add valid urls for OK status.
+
+For example: https://www.facebook.com this will give OK status
+
+             www.facebook.com this will give FAIL status
 
 ### 2. Run locally
 
@@ -32,7 +40,7 @@ mvn spring-boot:run
 
 This will start the web app/backend on the http://localhost:8080/
 
-Note: It will use a remote clearDB Mysql database from Heroku and create an empty table called 'service' there.
+Note: It will use a remote clearDB Mysql database instance from Heroku and create an empty table called 'service' there.
 
 You can check by visiting http://localhost:8080/service/getAll that a empty table has been created.
 
@@ -49,14 +57,20 @@ npm install
 npm start
 
 This will start the frontend project at http://localhost:3000/
+- Add some users and you are good to go.
+Note: make sure to add valid urls for OK status.
+
+For example: https://www.facebook.com this will give OK status
+
+             www.facebook.com this will give FAIL status
 
 ## Details about the functionality
-- This App will show the list of services added to the database. It will show following fields
-  - Name of the service
-  - URL of the service
-  - Date and Time when the services were added to the list
-  - OK or FAIL status of the service.
-- The Application will do the periodic(60 seconds) polling on each service in the list by hitting their urls and store their status (OK if status is 200 else FAIL status)
+- This App will show the list of services added to the database. It will show following fields for each service:
+  - Name: Name of the service
+  - URL: URL of the service
+  - Creation Time: Date and Time when the services were created to the list
+  - Status: OK or FAIL status of the service.
+- The Application will do periodic(60 seconds) polling on each service in the list by hitting their urls and store their status (OK if status is 200 else FAIL status)
 - Services can be added, deleted and updated.
 - The Application also fetches data from the api using axios GET request in every 60 secs.
 - It shows OK status only when the URL is a a valid URL. Follow this format "https://www.example.com"
