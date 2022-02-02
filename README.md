@@ -1,8 +1,11 @@
 # Kry Code Assignment (Service Poller)
 
-Please follow the following link for frontend repo
+Links to the repos
 
-https://github.com/Blossom-tech/kry-services-frontend.git
+
+Backend repo:   https://github.com/Blossom-tech/kry-services-frontend.git
+
+Frontend repo:  https://github.com/Blossom-tech/kry-services-frontend.git
 
 ## How to run the Application 
 ### 1. It's online at the following link on Heroku
